@@ -18,7 +18,7 @@ def validate():
  if len(txt.splitlines())>500: errors.append('SKILL.md exceeds 500 lines')
  for path in re.findall(r'\]\((references/[^)# ]+|assets/[^)# ]+)\)',txt):
   if not (SKILL.parent/path).is_file():errors.append('Missing referenced file: '+path)
- for path in ['README.md','SECURITY.md','CONTRIBUTING.md','EVALUATION.md','LICENSE','docs/GITHUB_PASSO_A_PASSO.md']:
+ for path in ['README.md','SECURITY.md','CONTRIBUTING.md','EVALUATION.md','LICENSE']:
   if not (ROOT/path).is_file():errors.append('Missing repo file: '+path)
  return errors
 if __name__=='__main__':

@@ -1,61 +1,79 @@
 <p align="center">
-  <img src="branding/seu-madruga-dev-mark1.png" alt="SeuMadruga.dev — Banner do projeto" width="100%">
+  <img src="branding/seu-madruga-dev-mark1.png" alt="Banner SeuMadruga.dev" width="100%">
 </p>
 
 <h1 align="center">SeuMadruga.dev</h1>
-
 <p align="center"><strong>Token não dá em árvore.</strong></p>
-<p align="center"><strong>AI Agent Efficiency & Context Engineering</strong></p>
-<p align="center">Claude Code · OpenAI Codex · Agent Skills</p>
-<p align="center"><strong>Por Rômulo Bezerra</strong></p>
+<p align="center">Uma Skill aberta para Claude Code e OpenAI Codex · <strong>Por Rômulo Bezerra</strong></p>
 
-## Quick Install | Instalação rápida
-
-**Claude Code + OpenAI Codex · Agent Skills**
+## Instalação rápida
 
 ```bash
 npx skills add quickplus2027/seu-madruga-dev --skill seu-madruga-dev
 ```
 
-> **Token não dá em árvore.** Planeje com inteligência, carregue apenas o contexto necessário e teste primeiro o que mudou.
+> O instalador `npx` pode obter e executar código externo. Confira o repositório e o instalador antes de utilizá-lo. Também é possível instalar a pasta [`skills/seu-madruga-dev`](skills/seu-madruga-dev) manualmente conforme a documentação do seu agente.
 
-[Explore a Skill](skills/seu-madruga-dev/SKILL.md) · [Guia de compatibilidade](docs/COMPATIBILITY.md) · [Segurança](SECURITY.md)
+## O que é o SeuMadruga.dev?
 
-<sub>Antes de instalar, revise o código-fonte e a origem do instalador: `npx` pode baixar e executar código externo. [Documentação do CLI](https://www.skills.sh/docs/cli).</sub>
+É um **conjunto de instruções para assistentes de programação**. Ele orienta o Claude Code e o Codex a selecionar a quantidade necessária de contexto, planejar tarefas complexas, sugerir modelos adequados e executar testes proporcionais às alterações.
 
-<p align="center"><img src="branding/seu-madruga-dev-mark.png" alt="SeuMadruga.dev — Mascote" width="270"></p>
+**Não é um modelo de IA novo, um aplicativo em segundo plano ou um contador automático de tokens.** É uma Skill: o agente lê orientações e decide como aplicá-las às tarefas, dentro das capacidades e permissões da ferramenta utilizada.
 
-**Token não dá em árvore.** Uma Agent Skill aberta de engenharia de contexto, economia de tokens e desenvolvimento confiável com Claude Code e OpenAI Codex.
+## Para que isso é útil?
 
-**Por Rômulo Bezerra** · GitHub: [quickplus2027](https://github.com/quickplus2027)
+| Situação do dia a dia | O que a Skill orienta o agente a fazer |
+| --- | --- |
+| Você pede para corrigir uma função pequena | Localizar primeiro os arquivos relacionados, em vez de ler o projeto inteiro. |
+| Você pede uma reformulação grande | Propor um plano e pedir aprovação antes de alterar vários módulos. |
+| A conversa começa a ficar longa | Sugerir inspecionar o contexto disponível e realizar um handoff, compactação ou nova sessão, conforme o agente. |
+| O agente quer usar o modelo mais caro para tudo | Recomendar um modelo e nível de raciocínio proporcionais à dificuldade; a troca depende do usuário e da ferramenta. |
+| Você muda um componente | Rodar primeiro testes afetados, ampliando para integração e suíte completa quando o risco exigir. |
+| Você encontra uma Skill externa no GitHub | Avaliar origem, manutenção, comandos, permissões e riscos antes de recomendar instalação. |
+| O agente repete buscas ou comandos sem progresso | Reavaliar a abordagem e aproveitar descobertas já documentadas. |
 
-**Status: v0.1.3, versão experimental com validação estrutural; sem alegações comprovadas de redução de custos.**
+**Exemplo prático:** se você pedir “corrija a validação do campo de e-mail”, a orientação é localizar esse componente e seus testes, propor uma alteração mínima e validar o comportamento afetado. Se o código modificar autenticação ou permissões, a própria regra determina uma verificação mais ampla por risco.
 
-> Brazilian humor, serious engineering. The Skill is not affiliated with Anthropic, OpenAI, the television program *Chaves* or its rights holders. Brand name and references should be reviewed for trademark/IP risks before commercial promotion. Illustrations depicting a character visually reminiscent of *Chaves* may involve third-party intellectual-property and likeness rights. Assess permissions or substitute an original mascot before public or commercial use.
+## O que muda e o que não muda
 
-## What it actually does
-Supports human-led model routing, task-sensitive planning and approval, Claude session commands where available, Codex-compatible equivalent workflows, selective repo reading, context handoffs, targeted risk-based tests, cautious discovery of external Skills, security boundaries and reproducible A/B benchmarks.
+**Ela pode ajudar a:** organizar sessões, evitar leituras redundantes, solicitar planejamento antes de mudanças complexas, produzir resumos de continuidade, escolher testes por impacto e reduzir trabalho desnecessário.
 
-## Requirements
-An Agent Skills-compatible client (capabilities vary by version). The Skill requires no API keys, no service, no runtime packages and does not execute network requests by itself. Python 3 is used for optional offline validation. Manual review remains necessary.
+**Ela não:**
+- Garante determinada porcentagem de economia nem um resultado mais barato em toda tarefa.
+- Mede o consumo de tokens em tempo real sem suporte da ferramenta.
+- Altera modelos, permissões, configurações ou modos automaticamente em todas as plataformas.
+- Substitui testes de segurança, revisão humana ou verificações completas exigidas em releases e mudanças críticas.
+- Instala outras Skills ou executa alterações destrutivas sem a autorização adequada.
 
-## Manual installation | Instalação manual
-If you prefer not to run `npx`, review and copy `skills/seu-madruga-dev` to a Skills directory supported by your version of Claude Code or Codex. Consult your client documentation for the correct location.
+## Como começar a usá-la
 
-## Usage
-Ask your agent: `Use seu-madruga-dev to plan this task with minimal context, request approval if high-risk, and test only affected paths first.` For a new independent task, follow the installed Claude or Codex session controls, rather than pretending slash commands are shared.
+Depois de instalada e reconhecida pelo seu agente, você pode pedir:
 
-## Layout
-- `skills/seu-madruga-dev/SKILL.md` lightweight entry point.
-- `skills/seu-madruga-dev/references/` optional focused playbooks.
-- `skills/seu-madruga-dev/assets/` handoff templates.
-- `tests/` structural checks and empty benchmarking dataset schema.
-- `docs/` publication and maintainer docs.
-- `branding/` GitHub banner, mascot PNG and text SVG.
-- `.github/workflows/` offline CI validation.
+> Use a Skill `seu-madruga-dev` nesta tarefa. Primeiro identifique o escopo mínimo, diga se precisamos de um plano aprovado e proponha apenas os testes necessários, ampliando-os se houver riscos. Não altere arquivos ainda.
 
-## Trust model
-No runtime code installation by this Skill. No automatic `git push`, destructive operations or secret disclosure. Claims are evidence-first; no unverified 'guaranteed savings'. Read [SECURITY.md](SECURITY.md), [EVALUATION.md](EVALUATION.md), and [CONTRIBUTING.md](CONTRIBUTING.md).
+Os comandos de sessão variam entre produtos e versões. Por exemplo, `/context`, `/compact` e `/clear` são referências de fluxos do Claude Code quando disponíveis; não presuma que esses comandos existam no Codex. Consulte a [compatibilidade](docs/COMPATIBILITY.md).
 
-## License and credits
-MIT for repository content except third-party trademarks; attribution in original README and source headers: **Por Rômulo Bezerra**. The author credit is recognition, not a restriction on MIT redistribution. Community contributors retain their respective attribution.
+## Transparência e confiança
+
+- **Código e instruções abertos:** leia o ponto de entrada [`SKILL.md`](skills/seu-madruga-dev/SKILL.md) e os módulos em [`references/`](skills/seu-madruga-dev/references/).
+- **Sem serviço próprio ou API paga:** a Skill é composta por arquivos locais; a instalação e o agente utilizado podem ter seus próprios custos e requisitos.
+- **Sem coleta de dados própria:** os arquivos da Skill não implementam telemetria; as políticas do Claude Code, Codex, GitHub e instaladores usados são independentes.
+- **Testes existentes:** verificações estruturais offline e testes unitários simples. Isso **não** equivale a auditoria de segurança nem demonstra economia de tokens.
+- **Evidências futuras:** medições devem comparar a mesma tarefa com e sem Skill, incluindo consumo, custo, tempo e qualidade. Veja [`EVALUATION.md`](EVALUATION.md).
+- **Status:** **v0.1.4 experimental**, sem benchmarks públicos conclusivos de redução de tokens.
+
+## In English
+
+**SeuMadruga.dev** is an open-source Agent Skill that guides Claude Code and OpenAI Codex toward leaner context retrieval, approval-first planning for complex changes, risk-based targeted testing, session handoffs and thoughtful model selection. It does not guarantee token savings, silently switch models, or run background monitoring. Read [`SKILL.md`](skills/seu-madruga-dev/SKILL.md) and [`SECURITY.md`](SECURITY.md) before installing.
+
+## Projeto e créditos
+
+**Criado por Rômulo Bezerra** · [GitHub quickplus2027](https://github.com/quickplus2027)
+
+[Segurança](SECURITY.md) · [Avaliação e métricas](EVALUATION.md) · [Compatibilidade](docs/COMPATIBILITY.md) · [Contribuições](CONTRIBUTING.md) · [Licença MIT](LICENSE)
+
+> Projeto independente, não afiliado à OpenAI, Anthropic ou aos titulares da série *Chaves*. Nome e imagens inspirados no personagem podem implicar direitos de terceiros; avalie permissões ou substituição do mascote antes de divulgação comercial. A licença MIT do código não concede direitos sobre marcas ou personagens de terceiros.
+
+<p align="center">
+  <img src="branding/seu-madruga-dev-mark.png" alt="Mascote SeuMadruga.dev" width="220">
+</p>
