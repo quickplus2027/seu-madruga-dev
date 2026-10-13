@@ -1,0 +1,14 @@
+# Waste and failure patterns
+- Every minor edit starts a ten-page plan -> scale planning to task.
+- Read entire monorepo before locating feature -> index paths/symbols first.
+- Ask Opus/high reasoning to rename variable -> select economical capable tier.
+- Use cheap model for irreversible migration without review -> escalate.
+- Execute complete suite after every line change -> targeted first, risk-based expansion.
+- Never run full suite before deploy -> unsafe; use release gates.
+- Huge history across unrelated tasks -> handoff + fresh session.
+- Repeated blind retries -> diagnosis after two failures, change plan by third.
+- Install all trending Skills -> only audited, complementary, justified Skills.
+- Equate lower tokens with correct deliverable -> quality-adjusted benchmark.
+- Treat `/clear` as safe before saving state -> checkpoint first.
+- Claim 70% savings from a promotional README -> demand reproducible measurements.
+- Hide failures under concise summaries -> report blockers and failed checks.

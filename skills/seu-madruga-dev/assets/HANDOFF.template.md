@@ -1,0 +1,11 @@
+# Handoff
+- Goal:
+- Approved scope:
+- Branch / `git status`:
+- Touched paths:
+- Key decisions:
+- Tests passed:
+- Tests failed or not run:
+- Risks / blockers:
+- Next concrete action:
+- Approval pending:

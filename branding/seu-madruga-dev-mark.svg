@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" role="img" aria-label="SeuMadruga.dev logo textual">
+<rect width="800" height="220" rx="32" fill="#101b26"/>
+<rect x="28" y="37" width="140" height="140" rx="28" fill="#172e35" stroke="#3cd6ba" stroke-width="3"/>
+<path d="M70 93l22 18-22 18M105 135h26" fill="none" stroke="#3cd6ba" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+<text x="195" y="117" fill="#fff8ec" font-family="Arial,sans-serif" font-size="55" font-weight="bold">SeuMadruga<tspan fill="#ffd54b">.dev</tspan></text>
+<text x="198" y="160" fill="#b4cbd0" font-family="Arial,sans-serif" font-size="23">Token não dá em árvore.</text>
+<text x="610" y="196" fill="#b4cbd0" font-family="Arial,sans-serif" font-size="17">Por Rômulo Bezerra</text>
+</svg>
