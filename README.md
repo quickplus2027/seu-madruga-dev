@@ -31,12 +31,13 @@ npx skills add quickplus2027/seu-madruga-dev --skill seu-madruga-dev
 | Você muda um componente | Rodar primeiro testes afetados, ampliando para integração e suíte completa quando o risco exigir. |
 | Você encontra uma Skill externa no GitHub | Avaliar origem, manutenção, comandos, permissões e riscos antes de recomendar instalação. |
 | O agente repete buscas ou comandos sem progresso | Reavaliar a abordagem e aproveitar descobertas já documentadas. |
+| Builds, testes ou caches estão enchendo seu perfil do Windows | Avaliar os caminhos utilizados, priorizar ajustes locais e pedir aprovação antes de mover ou apagar qualquer arquivo. |
 
 **Exemplo prático:** se você pedir “corrija a validação do campo de e-mail”, a orientação é localizar esse componente e seus testes, propor uma alteração mínima e validar o comportamento afetado. Se o código modificar autenticação ou permissões, a própria regra determina uma verificação mais ampla por risco.
 
 ## O que muda e o que não muda
 
-**Ela pode ajudar a:** organizar sessões, evitar leituras redundantes, solicitar planejamento antes de mudanças complexas, produzir resumos de continuidade, escolher testes por impacto e reduzir trabalho desnecessário.
+**Ela pode ajudar a:** organizar sessões, evitar leituras redundantes, solicitar planejamento antes de mudanças complexas, produzir resumos de continuidade, escolher testes por impacto e reduzir trabalho desnecessário. Também orienta como diagnosticar desperdício de disco, CPU, RAM e arquivos temporários sem colocar outros projetos em risco.
 
 **Ela não:**
 - Garante determinada porcentagem de economia nem um resultado mais barato em toda tarefa.
@@ -44,6 +45,13 @@ npx skills add quickplus2027/seu-madruga-dev --skill seu-madruga-dev
 - Altera modelos, permissões, configurações ou modos automaticamente em todas as plataformas.
 - Substitui testes de segurança, revisão humana ou verificações completas exigidas em releases e mudanças críticas.
 - Instala outras Skills ou executa alterações destrutivas sem a autorização adequada.
+- Limpa automaticamente seu Windows, movimenta caches globais, altera variáveis do sistema ou garante acelerar o computador.
+
+## Proteção do ambiente: seu computador também importa
+
+Economizar tokens não adianta se o projeto deixar seu computador lento ou encher o perfil do sistema com arquivos gerados. Quando a tarefa envolve **caches, builds, temporários ou consumo de recursos**, a Skill recomenda investigar primeiro, usar caminhos configuráveis **por projeto** e proteger dados, perfis e configurações existentes.
+
+**Exemplo:** se o `node_modules` ou os artefatos de teste ocuparem muito espaço, a Skill sugere medir a origem do problema e apresentar opções reversíveis. Ela **não exclui pastas**, **não altera o cache global** e **não presume que você tenha unidade `D:`**. Leia a [diretriz específica](skills/seu-madruga-dev/references/environment-efficiency.md).
 
 ## Como começar a usá-la
 
@@ -60,11 +68,11 @@ Os comandos de sessão variam entre produtos e versões. Por exemplo, `/context`
 - **Sem coleta de dados própria:** os arquivos da Skill não implementam telemetria; as políticas do Claude Code, Codex, GitHub e instaladores usados são independentes.
 - **Testes existentes:** verificações estruturais offline e testes unitários simples. Isso **não** equivale a auditoria de segurança nem demonstra economia de tokens.
 - **Evidências futuras:** medições devem comparar a mesma tarefa com e sem Skill, incluindo consumo, custo, tempo e qualidade. Veja [`EVALUATION.md`](EVALUATION.md).
-- **Status:** **v0.1.4 experimental**, sem benchmarks públicos conclusivos de redução de tokens.
+- **Status:** **v0.1.5 experimental**, sem benchmarks públicos conclusivos de redução de tokens.
 
 ## In English
 
-**SeuMadruga.dev** is an open-source Agent Skill that guides Claude Code and OpenAI Codex toward leaner context retrieval, approval-first planning for complex changes, risk-based targeted testing, session handoffs and thoughtful model selection. It does not guarantee token savings, silently switch models, or run background monitoring. Read [`SKILL.md`](skills/seu-madruga-dev/SKILL.md) and [`SECURITY.md`](SECURITY.md) before installing.
+**SeuMadruga.dev** is an open-source Agent Skill that guides Claude Code and OpenAI Codex toward leaner context retrieval, approval-first planning for complex changes, risk-based targeted testing, session handoffs, environment/profile protection and thoughtful model selection. It does not guarantee token savings, silently switch models, or run background monitoring. Read [`SKILL.md`](skills/seu-madruga-dev/SKILL.md) and [`SECURITY.md`](SECURITY.md) before installing.
 
 ## Projeto e créditos
 
