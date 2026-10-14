@@ -4,3 +4,5 @@ Status: methodology defined; **no measured benchmark results** included. Baselin
 Data template: `tests/benchmark_template.csv`. The first goal is a pre-registered benchmark suite of at least 8 diverse tasks, 5+ repetitions each subject to resource feasibility; this is a target, not a claim of completion.
 
 Quality gates: correctness at least baseline within uncertainty, security not degraded, no lost user edits, no bypassed CI, and a reproducible net cost/time improvement before saying it *saves* tokens.
+
+For multi-agent tests, record agent count, handoff overhead, duplicate reads and conflicts; a lower token count is not a win if correctness falls.

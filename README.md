@@ -26,6 +26,7 @@ npx skills add quickplus2027/seu-madruga-dev --skill seu-madruga-dev
 | --- | --- |
 | Você pede para corrigir uma função pequena | Localizar primeiro os arquivos relacionados, em vez de ler o projeto inteiro. |
 | Você pede uma reformulação grande | Propor um plano e pedir aprovação antes de alterar vários módulos. |
+| Você pede uma tarefa grande que poderia envolver vários agentes | Decidir se paralelizar ajuda de verdade; usar apenas os agentes necessários, evitando repetir leituras ou editar os mesmos arquivos ao mesmo tempo. |
 | A conversa começa a ficar longa | Sugerir inspecionar o contexto disponível e realizar um handoff, compactação ou nova sessão, conforme o agente. |
 | O agente quer usar o modelo mais caro para tudo | Recomendar um modelo e nível de raciocínio proporcionais à dificuldade; a troca depende do usuário e da ferramenta. |
 | Você muda um componente | Rodar primeiro testes afetados, ampliando para integração e suíte completa quando o risco exigir. |
@@ -34,6 +35,18 @@ npx skills add quickplus2027/seu-madruga-dev --skill seu-madruga-dev
 | Builds, testes ou caches estão enchendo seu perfil do Windows | Avaliar os caminhos utilizados, priorizar ajustes locais e pedir aprovação antes de mover ou apagar qualquer arquivo. |
 
 **Exemplo prático:** se você pedir “corrija a validação do campo de e-mail”, a orientação é localizar esse componente e seus testes, propor uma alteração mínima e validar o comportamento afetado. Se o código modificar autenticação ou permissões, a própria regra determina uma verificação mais ampla por risco.
+
+## Frontend, Design e UX: inovação visual com propósito
+
+Para tarefas de interface, o SeuMadruga.dev também orienta o agente a definir uma **direção artística própria**, melhorar navegação e hierarquia, considerar microinterações, componentes interativos, gráficos exploráveis e, quando justificado, experiências 3D. **Não ativa todas as tecnologias ao mesmo tempo:** escolhe somente o que agrega valor real, respeitando desempenho, acessibilidade, celulares e a arquitetura existente.
+
+**Exemplo:** ao criar um dashboard, o agente deve pensar em informações progressivas, filtros claros, tooltips úteis e gráficos compreensíveis, em vez de simplesmente instalar uma biblioteca 3D. A diretriz é aplicada **somente em tarefas visuais**, preservando tokens nas demais. [Veja VISUAL INNOVATION FIRST](skills/seu-madruga-dev/references/visual-excellence.md). A direção visual tem módulos independentes para [Design System](skills/seu-madruga-dev/references/visual-design-system.md), [UX](skills/seu-madruga-dev/references/visual-ux-interactions.md), [Motion](skills/seu-madruga-dev/references/visual-motion.md), [3D](skills/seu-madruga-dev/references/visual-3d-immersive.md), [Dados e Mapas](skills/seu-madruga-dev/references/visual-data-geospatial.md) e [Performance](skills/seu-madruga-dev/references/visual-performance-quality.md).
+
+## Como decide usar um ou vários agentes?
+
+A regra é **começar com um agente**. Para tarefas maiores, a Skill propõe uma classificação de cinco níveis (simples, moderado, complexo, crítico e estratégico) e só considera múltiplos agentes quando as atividades podem ser separadas sem conflito. O limite sugerido é de até quatro agentes para trabalhos estratégicos, **não uma obrigação de usar quatro**. A ferramenta precisa oferecer esse recurso; a Skill não cria agentes por conta própria. [Leia as regras de orquestração](skills/seu-madruga-dev/references/orchestration.md).
+
+**Exemplo:** mudar a cor de um botão não precisa de vários agentes. Refatorar módulos independentes pode justificar delegação, mas só depois de comparar coordenação, risco e trabalho duplicado.
 
 ## O que muda e o que não muda
 
@@ -68,11 +81,11 @@ Os comandos de sessão variam entre produtos e versões. Por exemplo, `/context`
 - **Sem coleta de dados própria:** os arquivos da Skill não implementam telemetria; as políticas do Claude Code, Codex, GitHub e instaladores usados são independentes.
 - **Testes existentes:** verificações estruturais offline e testes unitários simples. Isso **não** equivale a auditoria de segurança nem demonstra economia de tokens.
 - **Evidências futuras:** medições devem comparar a mesma tarefa com e sem Skill, incluindo consumo, custo, tempo e qualidade. Veja [`EVALUATION.md`](EVALUATION.md).
-- **Status:** **v0.1.5 experimental**, sem benchmarks públicos conclusivos de redução de tokens.
+- **Status:** **v0.1.8 experimental**, sem benchmarks públicos conclusivos de redução de tokens.
 
 ## In English
 
-**SeuMadruga.dev** is an open-source Agent Skill that guides Claude Code and OpenAI Codex toward leaner context retrieval, approval-first planning for complex changes, risk-based targeted testing, session handoffs, environment/profile protection and thoughtful model selection. It does not guarantee token savings, silently switch models, or run background monitoring. Read [`SKILL.md`](skills/seu-madruga-dev/SKILL.md) and [`SECURITY.md`](SECURITY.md) before installing.
+**SeuMadruga.dev** is an open-source Agent Skill that guides Claude Code and OpenAI Codex toward leaner context retrieval, approval-first planning for complex changes, risk-based targeted testing, session handoffs, optional multi-agent orchestration, environment/profile protection and thoughtful model selection. It does not guarantee token savings, silently switch models, or run background monitoring. Read [`SKILL.md`](skills/seu-madruga-dev/SKILL.md) and [`SECURITY.md`](SECURITY.md) before installing.
 
 ## Projeto e créditos
 
