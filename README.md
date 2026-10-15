@@ -1,4 +1,4 @@
-<p align="center"><img src="branding/seu-madruga-dev-mark1.png" width="100%" alt="SeuMadruga.dev — marca oficial"></p>
+<p align="center"><img src="branding/ecosystem-v2/seu-madruga-core.webp" alt="SeuMadruga Ecosystem 2.0 — Capa Master CORE" width="100%"></p>
 
 <h1 align="center">SeuMadruga Ecosystem 2.0</h1>
 <p align="center"><strong>9 skills especializadas · Uma forma mais inteligente de organizar tarefas com IA</strong></p>
@@ -77,9 +77,13 @@ python tools/skill_router.py "Criar um dashboard com autenticação, filtros e t
 
 Consulte [registro](core/skill-registry.json), [política de seleção](core/ROUTING_POLICY.md) e [contrato de qualidade](core/QUALITY_CONTRACT.md).
 
-## As nove skills
+## Conheça cada especialidade
+
+As oito especialidades abaixo apresentam sua identidade visual original imediatamente antes das instruções. A imagem CORE é a capa Master do projeto.
 
 ### 1. SeuMadruga CORE
+
+**O centro de coordenação do ecossistema.** A arte do CORE abre este documento como Capa Master e não é repetida aqui.
 
 **Especialidade:** Orquestração, triagem e economia de contexto.
 
@@ -92,6 +96,8 @@ Consulte [registro](core/skill-registry.json), [política de seleção](core/ROU
 **Exemplo:** > Use o SeuMadruga SeuMadruga CORE para avaliar o trabalho neste domínio, preservar o que já funciona e apresentar testes e evidências.
 
 ---
+
+<p align="center"><img src="branding/ecosystem-v2/design-system.webp" alt="Arte oficial SeuMadruga Design System" width="100%"></p>
 
 ### 2. Design System
 
@@ -107,6 +113,8 @@ Consulte [registro](core/skill-registry.json), [política de seleção](core/ROU
 
 ---
 
+<p align="center"><img src="branding/ecosystem-v2/cybersecurity.webp" alt="Arte oficial SeuMadruga Cybersecurity" width="100%"></p>
+
 ### 3. Cybersecurity
 
 **Especialidade:** Segurança, privacidade e controle de acesso.
@@ -120,6 +128,8 @@ Consulte [registro](core/skill-registry.json), [política de seleção](core/ROU
 **Exemplo:** > Use o SeuMadruga Cybersecurity para avaliar o trabalho neste domínio, preservar o que já funciona e apresentar testes e evidências.
 
 ---
+
+<p align="center"><img src="branding/ecosystem-v2/motion-studio.webp" alt="Arte oficial SeuMadruga Motion Studio" width="100%"></p>
 
 ### 4. Motion Studio
 
@@ -135,6 +145,8 @@ Consulte [registro](core/skill-registry.json), [política de seleção](core/ROU
 
 ---
 
+<p align="center"><img src="branding/ecosystem-v2/architecture.webp" alt="Arte oficial SeuMadruga Architecture" width="100%"></p>
+
 ### 5. Architecture
 
 **Especialidade:** Arquitetura, APIs, bancos e documentação técnica.
@@ -148,6 +160,8 @@ Consulte [registro](core/skill-registry.json), [política de seleção](core/ROU
 **Exemplo:** > Use o SeuMadruga Architecture para avaliar o trabalho neste domínio, preservar o que já funciona e apresentar testes e evidências.
 
 ---
+
+<p align="center"><img src="branding/ecosystem-v2/quality-assurance.webp" alt="Arte oficial SeuMadruga Quality Assurance" width="100%"></p>
 
 ### 6. Quality Assurance
 
@@ -163,6 +177,8 @@ Consulte [registro](core/skill-registry.json), [política de seleção](core/ROU
 
 ---
 
+<p align="center"><img src="branding/ecosystem-v2/ai-operations.webp" alt="Arte oficial SeuMadruga AI Operations" width="100%"></p>
+
 ### 7. AI Operations
 
 **Especialidade:** Agentes, MCP, modelos e eficiência.
@@ -177,6 +193,8 @@ Consulte [registro](core/skill-registry.json), [política de seleção](core/ROU
 
 ---
 
+<p align="center"><img src="branding/ecosystem-v2/data-experience.webp" alt="Arte oficial SeuMadruga Data Experience" width="100%"></p>
+
 ### 8. Data Experience
 
 **Especialidade:** Dashboards, KPIs e visualização de dados.
@@ -190,6 +208,8 @@ Consulte [registro](core/skill-registry.json), [política de seleção](core/ROU
 **Exemplo:** > Use o SeuMadruga Data Experience para avaliar o trabalho neste domínio, preservar o que já funciona e apresentar testes e evidências.
 
 ---
+
+<p align="center"><img src="branding/ecosystem-v2/content-studio.webp" alt="Arte oficial SeuMadruga Content Studio" width="100%"></p>
 
 ### 9. Content Studio
 
@@ -270,5 +290,5 @@ Essas verificações não substituem testes de execução real, avaliações de 
 
 Projeto independente, sem vínculo oficial com OpenAI, Anthropic ou titulares da série *Chaves*. O uso de nomes, personagens e marcas de terceiros pode exigir autorização específica; a licença do código não concede automaticamente esses direitos.
 
-<p align="center"><img src="branding/seu-madruga-dev-mark.png" alt="Marca SeuMadruga.dev" width="180"></p>
+<p align="center"><img src="branding/seu-madruga-dev-mark.png" alt="Identidade histórica do SeuMadruga.dev" width="150"></p>
 <p align="center"><strong>SeuMadruga.dev · Token não dá em árvore.</strong></p>
