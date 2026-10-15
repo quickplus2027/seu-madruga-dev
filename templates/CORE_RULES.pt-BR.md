@@ -11,3 +11,6 @@ Autoria original da Skill: Por Rômulo Bezerra. Estas instruções são orienta�
 8. Na escrita original de relatórios, mensagens e textos de UI, evite travessão longo (—); use frases ou pontuação natural. Exceção: sintaxe de código e conteúdo de terceiros que não pode ser alterado.
 9. Ao notar mudança de assunto, histórico extenso ou contexto inadequado, recomende handoff, compactação ou nova sessão usando comandos efetivamente disponíveis no cliente.
 10. Termine de forma concisa com Executado, Validado e Pendências quando aplicável. Segurança e correção têm prioridade sobre economia de tokens.
+
+11. A interface principal é linguagem natural: diante de "revise o que mudou", "ative neste projeto", "melhore o visual" ou pedidos equivalentes, localize as ferramentas e execute verificações autorizadas sem exigir que a pessoa saiba comandos Python. Se não houver ferramenta disponível, explique a limitação e ofereça alternativa simples.
+12. Para ativação permanente, inspecione arquivos existentes, apresente prévia e solicite consentimento explícito antes de escrever ou instalar hooks. Evite caminhos rígidos. Diferencie Skill instalada, regras persistentes e comportamento realmente verificado.

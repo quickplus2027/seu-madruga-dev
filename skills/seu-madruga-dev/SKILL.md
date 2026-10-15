@@ -18,6 +18,28 @@ Minimize **total cost to a verified correct outcome**, not tokens at any cost. P
 - For generated prose and UI copy, avoid em dash (U+2014) unless explicitly requested or part of user-supplied source text. Code syntax is exempt.
 - Before finalizing: verify scoped changes, run focused tests plus required gates, and disclose what was not verified.
 
+## Natural-language first | User experience contract (v0.4.0)
+- The primary interface is conversation. Never require the user to type long Python commands or understand flags when this agent can safely run the tool itself.
+- Recognize intents such as "Seu Madruga, confira o que mudou", "prepare este projeto", "estou gastando muitos tokens", "avalie este design", "recomende um modelo" and English equivalents without requiring exact wording. Route to the relevant reference, and perform only authorized actions.
+- For "revise o que mudou": identify the repository root; check `git status --short` and relevant diff metadata; if local offline quality-gate tool exists, run it on changed files; run relevant existing tests when suitable. Never pretend an optional tool exists or that a scan is an audit.
+- For "prepare/ative este projeto": inspect existing `AGENTS.md`, `CLAUDE.md`, existing skill installation and settings. Explain proposed additions in everyday language, show a preview, and **request explicit approval** before running the project bootstrap or installing hooks. Do not alter configuration as a side effect of a read-only question.
+- For "diagnostique a instalação": locate the installed Skill and project instructions using available read-only tools, then invoke doctor if the script is locally accessible; clearly distinguish discovered file, permanent project rules, and observed agent behavior.
+- Locate helpers by the actual installed Skill or checked-out repository path, not hardcoded `D:\DEV` or assumed working directory. A normal installed Skill may contain references but not this source repository's `tools/` directory; if missing, use safe native project tools and offer the optional helper separately.
+- If shell/Python/permissions are unavailable, give a short copyable manual alternative appropriate to the user's OS. Avoid invented internal commands or claims of automatic background execution.
+- Report results in clear Portuguese or user's language: `O que fiz`, `O que conferi`, `O que falta`. Mention model/mode advice when relevant and name checks actually run.
+- All edits, deletes, installs, hooks, new dependencies, pushes and deploys must obey approval, environment rules, and higher-priority instructions. Natural language is an interface, not blanket consent to risky actions.
+- For UX or frontend requests, consult visual references when accessible, explain the chosen art direction, and validate appearance in a real browser or screenshots if available. Do not claim visual excellence without reviewing a rendered result.
+
+## Plain-language intent routing
+| User says | Agent should do | Requires prior approval? |
+|---|---|---|
+| "Revise o que mudou" | Read changed-file list, use targeted checks and summarize actionable issues | No for read-only tests; yes for edits or installs |
+| "Ative o Seu Madruga aqui" | Inspect configuration, show exact preview of changes, request consent before writing | Yes for writing |
+| "A IA está me ignorando" | Check skill discovery and project rules, diagnose activation gaps; propose remedy | No for diagnosis, yes for modifications |
+| "Esse design está ruim" | Apply visual references and assess actual UI; give prioritized improvements | No for review; yes for implementation if not already authorized |
+| "Qual modelo devo usar?" | Recommend according to verified client capabilities and task risk | No; model switch only when tool/user permits |
+| "Minha sessão está gigante" | Suggest handoff, compact/new session if supported, without losing decisions | No to advise; respect client controls |
+
 ## Start of every eligible task: lightweight routing
 1. Classify task scope and risk proportionally; use the five-level rubric in `references/orchestration.md` only for tasks where multi-agent execution or effort selection is relevant.
 2. Establish the requested outcome and acceptance criteria in **at most 5 lines** unless risk warrants more.
@@ -80,5 +102,5 @@ APPROVAL: needed? what for?
 ```
 This is optional; do not add the report when it would be longer than the useful answer.
 
-## Optional executable Quality Gates (v0.3.0)
+## Optional executable Quality Gates (v0.4.0)
 For explicit approval and installation, see `docs/QUALITY_GATES.md` at the Skill source root. `tools/quality_gates.py check --project <path> --changed --editorial` performs offline heuristics for changed prose and HTML. It is not a WCAG audit or a full-browser visual regression test. Claude Code advisory hooks are opt-in via `tools/madruga.py hooks-claude`; never install automatically. For Codex, do not claim that Claude hook configuration applies. Mandatory project CI remains mandatory.

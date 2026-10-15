@@ -15,15 +15,21 @@ npx skills add quickplus2027/seu-madruga-dev --skill seu-madruga-dev
 > O instalador `npx` pode obter e executar código externo. Confira o repositório e o instalador antes de utilizá-lo. Também é possível instalar a pasta [`skills/seu-madruga-dev`](skills/seu-madruga-dev) manualmente conforme a documentação do seu agente.
 
 
-## Quality Gates (opt-in) | Verificações reais
+## Como usar sem decorar comandos
 
-Além dos guias, a versão **v0.3.0** traz verificação offline de arquivos alterados, indícios básicos de acessibilidade HTML e convenção editorial, com hooks consultivos opcionais para Claude Code. **Não garante visual premiado, redução de tokens ou cumprimento automático**. Não instala bibliotecas nem substitui testes de navegador ou auditoria de segurança.
+**Basta conversar com o agente depois de instalar a Skill.** Exemplos de pedidos:
 
-```powershell
-python D:\DEV\SeuMadruga\tools\quality_gates.py check --project D:\DEV\MeuProjeto --changed --editorial
-```
+- **"Seu Madruga, confira o que mudou no projeto."** O agente identifica alterações e propõe verificações direcionadas. Se tiver acesso às ferramentas, executa verificações autorizadas e relata o que realmente examinou.
+- **"Seu Madruga, prepare este projeto para usar suas regras."** O agente inspeciona as configurações e apresenta uma prévia. **Só modifica arquivos depois de você aprovar.**
+- **"Seu Madruga, esse design está ruim. Avalie e proponha melhorias."** O agente consulta as diretrizes visuais pertinentes e avalia resultados reais quando possível.
+- **"Seu Madruga, estou gastando muitos tokens."** O agente avalia contexto, estratégia, tarefas e modelo disponível, sem inventar métricas.
+- **"Seu Madruga, as regras estão sendo ignoradas."** O agente verifica a instalação e distingue presença dos arquivos de cumprimento real das instruções.
 
-Para instalar os hooks locais opcionais, veja [Quality Gates](docs/QUALITY_GATES.md). Eles nunca substituem arquivos `.claude/settings.local.json` existentes. Para Codex, use as regras em AGENTS.md e gates externos até validar uma integração específica de hooks.
+**Importante:** instalar uma Skill não garante que o agente a carregue em todas as tarefas. Se necessário, invoque `seu-madruga-dev` explicitamente e configure, mediante aprovação, as regras persistentes no projeto. Veja [Ativação guiada](docs/ACTIVATION.md).
+
+## Verificações de qualidade sem complicação
+
+O agente pode utilizar as verificações de arquivos alterados, escrita e acessibilidade HTML disponíveis no projeto. Essas verificações são **limitadas**: não equivalem a auditoria WCAG, teste visual completo ou prova de economia de tokens. As ferramentas opcionais estão documentadas em [Quality Gates para mantenedores](docs/QUALITY_GATES.md); usuários comuns não precisam decorar seus parâmetros.
 
 ## O que é o SeuMadruga.dev?
 
@@ -92,7 +98,7 @@ Os comandos de sessão variam entre produtos e versões. Por exemplo, `/context`
 - **Sem coleta de dados própria:** os arquivos da Skill não implementam telemetria; as políticas do Claude Code, Codex, GitHub e instaladores usados são independentes.
 - **Testes existentes:** verificações estruturais offline e testes unitários simples. Isso **não** equivale a auditoria de segurança nem demonstra economia de tokens.
 - **Evidências futuras:** medições devem comparar a mesma tarefa com e sem Skill, incluindo consumo, custo, tempo e qualidade. Veja [`EVALUATION.md`](EVALUATION.md).
-- **Status:** **v0.3.0 experimental**, sem benchmarks públicos conclusivos de redução de tokens.
+- **Status:** **v0.4.0 experimental**, sem benchmarks públicos conclusivos de redução de tokens.
 
 ## In English
 

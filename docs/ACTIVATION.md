@@ -1,3 +1,11 @@
+# Ativação guiada
+
+**Modo recomendado para usuários:** diga ao seu agente: **"Use seu-madruga-dev e prepare este projeto para aplicar suas regras. Primeiro inspecione e mostre o que mudaria; aguarde minha aprovação."**
+
+O agente deve encontrar `AGENTS.md` e `CLAUDE.md`, explicar em linguagem simples e só depois de autorização escrever. Scripts locais são opcionais, dependem de sua disponibilidade e jamais devem ser inventados.
+
+---
+
 # Como tornar as regras persistentes
 
 A instalação via skills.sh disponibiliza a Skill; não injeta regras permanentes em cada repositório. Para impor convenções de projeto, execute um preview do bootstrap e, após revisar, aplique os blocos identificados em `AGENTS.md` e `CLAUDE.md`.
