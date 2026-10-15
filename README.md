@@ -177,7 +177,7 @@ As oito especialidades abaixo apresentam sua identidade visual original imediata
 
 ---
 
-<p align="center"><img src="branding/ecosystem-v2/ai-operations.webp" alt="Arte oficial SeuMadruga AI Operations" width="100%"></p>
+<p align="center"><img src="branding/ecosystem-v2/ai-operation.webp" alt="Arte oficial SeuMadruga AI Operations" width="100%"></p>
 
 ### 7. AI Operations
 
