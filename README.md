@@ -4,7 +4,7 @@
 <p align="center"><strong>9 skills especializadas · Uma forma mais inteligente de organizar tarefas com IA</strong></p>
 <p align="center"><strong>Idealizado e criado por Rômulo Bezerra</strong></p>
 
-<p align="center"><a href="#visão-geral">Visão geral</a> · <a href="#instalação">Instalação</a> · <a href="#as-nove-skills">As nove skills</a> · <a href="#exemplos-de-uso">Exemplos</a> · <a href="#validação-e-limites">Qualidade</a></p>
+<p align="center"><a href="#visão-geral">Visão geral</a> · <a href="#-comece-aqui-instale-o-seumadruga-em-poucos-passos">🚀 Instale agora</a> · <a href="#as-nove-skills">As nove skills</a> · <a href="#exemplos-de-uso">Exemplos</a> · <a href="#validação-e-limites">Qualidade</a></p>
 
 ---
 
@@ -23,33 +23,154 @@ O sistema prioriza **resultado verificável e economia inteligente de contexto**
 5. **Qualidade demonstrável:** distinguir verificações executadas, avisos e tarefas não testadas.
 6. **Autoria e continuidade:** manter histórico, decisões e material do projeto original.
 
-## Instalação
+## 🚀 COMECE AQUI: Instale o SeuMadruga em poucos passos
 
-### Instalação rápida com skills
+**Nunca instalou uma skill? Sem problema.** Este tutorial ensina o básico, sem pressupor conhecimento de programação. Você pode instalar primeiro o **CORE** e, depois, adicionar as especialidades desejadas.
+
+<p align="center"><strong>1. Prepare → 2. Instale → 3. Use → 4. Confira</strong></p>
+
+### ✅ Antes de começar: o que você precisa?
+
+- **Computador Windows, macOS ou Linux.** Os exemplos abaixo também funcionam em terminais integrados de editores, quando configurados.
+- **Claude Code ou OpenAI Codex instalado e configurado.** Uma skill complementa o agente; não substitui o aplicativo.
+- **Node.js e npm disponíveis**, para executar o instalador `npx`. Se já usa `npx`, pode seguir diretamente.
+
+Não precisa baixar cada arquivo manualmente nem criar pastas à mão ao utilizar o instalador.
+
+<details>
+<summary><strong>🧩 Sou iniciante: onde digito os comandos?</strong></summary>
+
+**Windows:** abra o menu Iniciar, procure **PowerShell** e abra o aplicativo. Se você usa o VS Code, também pode ir ao menu **Terminal → Novo Terminal**.
+
+**macOS:** abra o aplicativo **Terminal**.
+
+**Linux:** abra seu terminal habitual.
+
+Digite os comandos no terminal, não na barra de endereços do navegador. Para verificar se o Node.js está disponível, execute:
+
+```bash
+node --version
+npm --version
+```
+
+Se algum deles não funcionar, instale a versão LTS do [Node.js](https://nodejs.org/) e abra um novo terminal antes de tentar novamente.
+
+</details>
+
+### 📥 Passo 1. Instale o SeuMadruga CORE
+
+Copie e cole este comando no terminal:
 
 ```bash
 npx skills add quickplus2027/seu-madruga-dev --skill seu-madruga-core
 ```
 
-Troque `seu-madruga-core` pelo identificador desejado na tabela abaixo. O comando acima utiliza instalador externo, cuja origem e permissões devem ser revisadas antes da execução. Para instalação manual consulte [o guia de ativação](docs/ACTIVATION.md), [compatibilidade](docs/COMPATIBILITY.md) e [instruções da v2](docs/ECOSYSTEM_V2.md).
+O CORE é a especialidade central: ajuda a identificar o objetivo, avaliar o risco e selecionar instruções adequadas para cada tarefa.
 
-### Quadro de especialidades
+**Durante a instalação:** o instalador pode pedir para escolher o agente, o local de instalação ou confirmar operações. Leia as opções e selecione o Claude Code ou Codex que realmente utiliza. Não aceite permissões ou execução de códigos desconhecidos sem revisar.
 
-| Skill | Identificador para instalação | Foco principal |
-| --- | --- | --- |
-| [SeuMadruga CORE](skills/seu-madruga-core/SKILL.md) | `seu-madruga-core` | Orquestração, triagem e economia de contexto |
-| [Design System](skills/design-system/SKILL.md) | `design-system` | Interfaces, UX/UI e design de produto |
-| [Cybersecurity](skills/cybersecurity/SKILL.md) | `cybersecurity` | Segurança, privacidade e controle de acesso |
-| [Motion Studio](skills/motion-studio/SKILL.md) | `motion-studio` | Vídeo programático, Remotion e animação |
-| [Architecture](skills/architecture/SKILL.md) | `architecture` | Arquitetura, APIs, bancos e documentação técnica |
-| [Quality Assurance](skills/quality-assurance/SKILL.md) | `quality-assurance` | Testes, qualidade e confiabilidade |
-| [AI Operations](skills/ai-operations/SKILL.md) | `ai-operations` | Agentes, MCP, modelos e eficiência |
-| [Data Experience](skills/data-experience/SKILL.md) | `data-experience` | Dashboards, KPIs e visualização de dados |
-| [Content Studio](skills/content-studio/SKILL.md) | `content-studio` | Conteúdo, roteiros e narrativa multicanal |
+> **Atenção:** `npx skills` é um instalador de terceiros e pode obter/executar código externo. Confira sua procedência e as permissões solicitadas. O comando de instalação pode variar conforme a versão instalada; consulte [skills.sh](https://skills.sh/) para orientações atualizadas.
 
-### Como saber se está funcionando?
+### 🎨 Passo 2. Escolha suas especialidades
 
-A presença de `SKILL.md` é apenas o primeiro passo. Para avaliar uso real, confirme que seu Claude Code ou Codex descobriu a skill, invoque-a quando necessário e observe suas instruções na tarefa, com evidências de testes e revisão. As configurações e comandos dependem da versão do cliente. A skill não troca modelos nem instala hooks universalmente.
+**Quer melhorar interfaces?** Instale Design System:
+
+```bash
+npx skills add quickplus2027/seu-madruga-dev --skill design-system
+```
+
+**Quer revisar segurança?** Instale Cybersecurity:
+
+```bash
+npx skills add quickplus2027/seu-madruga-dev --skill cybersecurity
+```
+
+**Quer criar animações e vídeos?** Instale Motion Studio:
+
+```bash
+npx skills add quickplus2027/seu-madruga-dev --skill motion-studio
+```
+
+Você não precisa instalar as oito especialidades imediatamente. Escolha as que correspondem ao seu trabalho.
+
+<details>
+<summary><strong>📚 Ver comandos das nove skills</strong></summary>
+
+| Skill | Comando de instalação |
+| --- | --- |
+| CORE | `npx skills add quickplus2027/seu-madruga-dev --skill seu-madruga-core` |
+| Design System | `npx skills add quickplus2027/seu-madruga-dev --skill design-system` |
+| Cybersecurity | `npx skills add quickplus2027/seu-madruga-dev --skill cybersecurity` |
+| Motion Studio | `npx skills add quickplus2027/seu-madruga-dev --skill motion-studio` |
+| Architecture | `npx skills add quickplus2027/seu-madruga-dev --skill architecture` |
+| Quality Assurance | `npx skills add quickplus2027/seu-madruga-dev --skill quality-assurance` |
+| AI Operations | `npx skills add quickplus2027/seu-madruga-dev --skill ai-operations` |
+| Data Experience | `npx skills add quickplus2027/seu-madruga-dev --skill data-experience` |
+| Content Studio | `npx skills add quickplus2027/seu-madruga-dev --skill content-studio` |
+
+</details>
+
+### 💬 Passo 3. Comece a utilizar no seu agente
+
+Depois da instalação, abra uma nova sessão no Claude Code ou Codex, dentro do projeto em que deseja trabalhar, e experimente pedir:
+
+> Use a skill **seu-madruga-core** neste projeto. Identifique meu objetivo, recomende as especialidades necessárias, mostre seu plano e não modifique arquivos sem minha aprovação.
+
+**Para melhorar um site:**
+
+> Use **design-system** para avaliar o frontend, a versão mobile, a navegação e a acessibilidade. Liste problemas, proponha soluções e mostre como validar o resultado.
+
+**Para melhorar o código:**
+
+> Use **quality-assurance** para identificar os testes necessários, revisar alterações e informar o que passou, falhou ou não foi executado.
+
+**Para criar vídeos:**
+
+> Use **motion-studio** para planejar um vídeo com Remotion. Comece definindo cenas, duração e roteiro antes de implementar.
+
+### 🔍 Passo 4. Verifique se a instalação funcionou
+
+Peça ao seu agente:
+
+> Quais skills SeuMadruga você consegue descobrir nesta sessão? Mostre o caminho do `SKILL.md` de cada uma e explique como utilizaria uma delas na minha próxima tarefa.
+
+Depois, escolha uma tarefa pequena e observe se ele realmente consulta as instruções. **Instalação, descoberta e aplicação efetiva são verificações diferentes**.
+
+### 🛠️ Solução rápida de problemas
+
+<details>
+<summary><strong>O comando npx não funciona</strong></summary>
+
+Verifique se Node.js e npm estão instalados com `node --version` e `npm --version`. Se necessário, instale o Node.js LTS e reabra o terminal.
+
+</details>
+
+<details>
+<summary><strong>A skill foi instalada, mas o Claude Code ou Codex não a encontra</strong></summary>
+
+Confirme que você selecionou o agente correto no instalador e o local de instalação. Abra uma nova sessão. Se ainda não aparecer, consulte a documentação específica de descoberta de skills da sua versão do [Claude Code](https://code.claude.com/docs) ou [Codex](https://developers.openai.com/codex/).
+
+</details>
+
+<details>
+<summary><strong>O agente encontra a skill, mas ignora algumas regras</strong></summary>
+
+Peça que ele leia explicitamente o `SKILL.md` correspondente e explique quais instruções serão aplicadas. Para regras persistentes por projeto, consulte o [guia de ativação](docs/ACTIVATION.md). A skill é uma orientação, não um mecanismo infalível de imposição de regras.
+
+</details>
+
+<details>
+<summary><strong>Quero instalar manualmente, sem npx</strong></summary>
+
+Abra a pasta [skills/](skills/) deste repositório, escolha a especialidade e copie a pasta completa, incluindo `SKILL.md` e `references/`, para o local reconhecido pelo seu agente. A localização depende da versão e configuração do Claude Code ou Codex. Consulte [instalação detalhada](docs/ECOSYSTEM_V2.md) e [compatibilidade](docs/COMPATIBILITY.md).
+
+</details>
+
+### 📖 Documentação adicional
+
+[**Guia de ativação**](docs/ACTIVATION.md) · [**Instalação detalhada**](docs/ECOSYSTEM_V2.md) · [**Windows e VS Code**](docs/INSTALL_WINDOWS.md) · [**Compatibilidade**](docs/COMPATIBILITY.md)
+
+---
 
 ## Como funciona a orquestração
 
