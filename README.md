@@ -29,7 +29,6 @@ O SeuMadruga é uma coleção de instruções modulares para ajudar assistentes 
 | 📊 **Data Experience** | Dashboards, gráficos, métricas e dados | [SKILL.md](skills/data-experience/SKILL.md) |
 | ✍️ **Content Studio** | Conteúdo, narrativas e comunicação | [SKILL.md](skills/content-studio/SKILL.md) |
 
-> **Sobre a galeria de imagens:** o pacote de instalação contém nove artes WebP distintas, mas esses arquivos ainda não foram transferidos para este repositório. A galeria não é exibida aqui para evitar imagens quebradas ou exemplos confundidos com as originais. Os arquivos originais de marca continuam preservados em `branding/`.
 
 ## Instalação
 
