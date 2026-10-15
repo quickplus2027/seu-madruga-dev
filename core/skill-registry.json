@@ -1,0 +1,146 @@
+{
+  "version": "2.0.0",
+  "author": "Rômulo Bezerra",
+  "core": "seu-madruga-core",
+  "preserved_legacy_skill": "seu-madruga-dev",
+  "skills": [
+    {
+      "id": "seu-madruga-core",
+      "title": "SeuMadruga CORE",
+      "keywords": [
+        "orquestração",
+        "triagem de tarefas",
+        "seleção de skills",
+        "política de riscos",
+        "economia de contexto"
+      ],
+      "path": "skills/seu-madruga-core/SKILL.md",
+      "branding": "branding/ecosystem-v2/seu-madruga-core.webp"
+    },
+    {
+      "id": "design-system",
+      "title": "SeuMadruga Design System",
+      "keywords": [
+        "frontend",
+        "interface",
+        "UX",
+        "UI",
+        "design system",
+        "componentização",
+        "responsividade",
+        "microinterações"
+      ],
+      "path": "skills/design-system/SKILL.md",
+      "branding": "branding/ecosystem-v2/design-system.webp"
+    },
+    {
+      "id": "cybersecurity",
+      "title": "SeuMadruga Cybersecurity",
+      "keywords": [
+        "segurança",
+        "autenticação",
+        "autorização",
+        "API",
+        "SQL",
+        "XSS",
+        "vulnerabilidade",
+        "LGPD",
+        "segredos"
+      ],
+      "path": "skills/cybersecurity/SKILL.md",
+      "branding": "branding/ecosystem-v2/cybersecurity.webp"
+    },
+    {
+      "id": "motion-studio",
+      "title": "SeuMadruga Motion Studio",
+      "keywords": [
+        "Remotion",
+        "vídeos",
+        "reels",
+        "motion design",
+        "transições",
+        "storyboard",
+        "renderização"
+      ],
+      "path": "skills/motion-studio/SKILL.md",
+      "branding": "branding/ecosystem-v2/motion-studio.webp"
+    },
+    {
+      "id": "architecture",
+      "title": "SeuMadruga Architecture",
+      "keywords": [
+        "PRD",
+        "TRD",
+        "arquitetura",
+        "escalabilidade",
+        "API",
+        "banco",
+        "infraestrutura",
+        "ADR"
+      ],
+      "path": "skills/architecture/SKILL.md",
+      "branding": "branding/ecosystem-v2/architecture.webp"
+    },
+    {
+      "id": "quality-assurance",
+      "title": "SeuMadruga Quality Assurance",
+      "keywords": [
+        "testes",
+        "QA",
+        "qualidade",
+        "lint",
+        "CI",
+        "revisão",
+        "release",
+        "regressão"
+      ],
+      "path": "skills/quality-assurance/SKILL.md",
+      "branding": "branding/ecosystem-v2/quality-assurance.webp"
+    },
+    {
+      "id": "ai-operations",
+      "title": "SeuMadruga AI Operations",
+      "keywords": [
+        "agentes",
+        "MCP",
+        "tokens",
+        "roteamento de modelos",
+        "memória",
+        "contexto",
+        "automação"
+      ],
+      "path": "skills/ai-operations/SKILL.md",
+      "branding": "branding/ecosystem-v2/ai-operations.webp"
+    },
+    {
+      "id": "data-experience",
+      "title": "SeuMadruga Data Experience",
+      "keywords": [
+        "dashboard",
+        "KPI",
+        "gráficos",
+        "dados",
+        "estatística",
+        "analytics",
+        "storytelling"
+      ],
+      "path": "skills/data-experience/SKILL.md",
+      "branding": "branding/ecosystem-v2/data-experience.webp"
+    },
+    {
+      "id": "content-studio",
+      "title": "SeuMadruga Content Studio",
+      "keywords": [
+        "instagram",
+        "carrossel",
+        "legenda",
+        "reels",
+        "marketing",
+        "CTA",
+        "conteúdo"
+      ],
+      "path": "skills/content-studio/SKILL.md",
+      "branding": "branding/ecosystem-v2/content-studio.webp"
+    }
+  ]
+}

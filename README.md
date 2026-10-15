@@ -119,3 +119,24 @@ Os comandos de sessão variam entre produtos e versões. Por exemplo, `/context`
 
 ## Ativação consistente por projeto
 A instalação da Skill sozinha não torna as regras permanentes. Consulte [Ativação e diagnóstico](docs/ACTIVATION.md) para adicionar instruções preservando seus arquivos e auditar o resultado. O comando `doctor` não confirma que o modelo obedeceu às instruções.
+
+
+## SeuMadruga Ecosystem 2.0 | Expansão modular
+
+**Por Rômulo Bezerra.** A versão 2.0 acrescenta nove especialidades sem substituir a skill original `seu-madruga-dev`. Cada `SKILL.md` documenta seu domínio, enquanto o roteador Python oferece recomendações determinísticas, sem ativação automática de agentes.
+
+| Skill | Papel |
+| --- | --- |
+| [SeuMadruga CORE](skills/seu-madruga-core/SKILL.md) | orquestração, triagem de tarefas, seleção de skills |
+| [SeuMadruga Design System](skills/design-system/SKILL.md) | frontend, interface, UX |
+| [SeuMadruga Cybersecurity](skills/cybersecurity/SKILL.md) | segurança, autenticação, autorização |
+| [SeuMadruga Motion Studio](skills/motion-studio/SKILL.md) | Remotion, vídeos, reels |
+| [SeuMadruga Architecture](skills/architecture/SKILL.md) | PRD, TRD, arquitetura |
+| [SeuMadruga Quality Assurance](skills/quality-assurance/SKILL.md) | testes, QA, qualidade |
+| [SeuMadruga AI Operations](skills/ai-operations/SKILL.md) | agentes, MCP, tokens |
+| [SeuMadruga Data Experience](skills/data-experience/SKILL.md) | dashboard, KPI, gráficos |
+| [SeuMadruga Content Studio](skills/content-studio/SKILL.md) | instagram, carrossel, legenda |
+
+Consulte [instalação e ativação da v2](docs/ECOSYSTEM_V2.md), [prompt mestre](docs/PROMPT_MESTRE_V2.md), [registro](core/skill-registry.json) e [contrato de qualidade](core/QUALITY_CONTRACT.md). Execute `python tools/skill_router.py "seu pedido"` para obter uma sugestão de roteamento. A instalação da skill não comprova ativação no Claude Code ou no Codex.
+
+As nove artes WebP pertencentes ao pacote de expansão devem ficar em `branding/ecosystem-v2/`. A publicação das imagens é uma etapa independente dos arquivos de texto e precisa ser verificada. A marca original segue preservada.
