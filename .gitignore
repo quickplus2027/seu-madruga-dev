@@ -7,3 +7,6 @@ __pycache__/
 .vscode/
 .venv/
 node_modules/
+
+# project-local hook configuration (may contain machine paths)
+.claude/settings.local.json

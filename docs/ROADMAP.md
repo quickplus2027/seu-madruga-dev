@@ -4,3 +4,5 @@
 Do not claim any milestone completed without corresponding tests and release artifacts. Avoid adding always-running agent processes: monitoring itself can consume tokens.
 
 - v0.1.5: Added opt-in, cross-platform environment efficiency and Windows profile protection guidance; no automatic cleanup or global configuration changes.
+
+- v0.3.0: opt-in offline Quality Gates and advisory Claude hooks. Browser snapshot and Codex hook adapters remain future work, not shipped.

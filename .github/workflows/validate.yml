@@ -16,3 +16,5 @@ jobs:
         run: python tests/validate_skill.py
       - name: Unit tests
         run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Compile offline tools
+        run: python -m py_compile tools/madruga.py tools/quality_gates.py

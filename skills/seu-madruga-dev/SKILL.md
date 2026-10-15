@@ -1,6 +1,6 @@
 ---
 name: seu-madruga-dev
-description: Optimize Claude Code and OpenAI Codex workflows for token efficiency, context engineering, planning approvals, model routing, targeted tests, lean tool calls, safe skill selection, and reproducible measurement. Use for AI-assisted coding, session management, expensive agent loops, and project workflow optimization.
+description: Apply efficiency-first software development to ANY Claude Code or Codex task, including frontend, UI/UX, visual design, backend, bug fixes, planning, refactoring, testing, Git, context management and agent routing. Before complex work recommend Plan Mode and suitable model/effort; preserve user data, avoid redundant searches/tests and respect writing style. Use on coding requests even when user does not explicitly mention tokens. Run project bootstrap for persistent instructions when authorized.
 license: MIT
 ---
 # SeuMadruga.dev | Agent Efficiency Skill
@@ -9,6 +9,14 @@ license: MIT
 
 ## Mission
 Minimize **total cost to a verified correct outcome**, not tokens at any cost. Prioritize correctness, security, user approvals and reproducibility. Treat claims of savings as hypotheses unless measured. Be platform-aware: never invent commands, context utilization data, model names, or telemetry.
+
+## Activation contract: apply on EVERY coding task when invoked
+- At first use check whether the consuming project has the SeuMadruga managed block in its own `AGENTS.md`/`CLAUDE.md`; if missing, suggest `python <skill-repo>/tools/madruga.py bootstrap --project <path>` as a preview. Never modify without user approval.
+- Distinguish discovery, activation, and compliance: presence of a Skill does NOT imply these rules are loaded or obeyed. Make no claim of background monitoring.
+- For frontend tasks, read `references/visual-excellence.md` before new screens or redesigns, then appropriate specialized guide. Assess screenshots or actual browser output if available.
+- For complex tasks, briefly propose model/effort and planning mode, using only available controls. Do not claim automatic switches.
+- For generated prose and UI copy, avoid em dash (U+2014) unless explicitly requested or part of user-supplied source text. Code syntax is exempt.
+- Before finalizing: verify scoped changes, run focused tests plus required gates, and disclose what was not verified.
 
 ## Start of every eligible task: lightweight routing
 1. Classify task scope and risk proportionally; use the five-level rubric in `references/orchestration.md` only for tasks where multi-agent execution or effort selection is relevant.
@@ -71,3 +79,6 @@ TEST: targeted tests + risk-based expansion
 APPROVAL: needed? what for?
 ```
 This is optional; do not add the report when it would be longer than the useful answer.
+
+## Optional executable Quality Gates (v0.3.0)
+For explicit approval and installation, see `docs/QUALITY_GATES.md` at the Skill source root. `tools/quality_gates.py check --project <path> --changed --editorial` performs offline heuristics for changed prose and HTML. It is not a WCAG audit or a full-browser visual regression test. Claude Code advisory hooks are opt-in via `tools/madruga.py hooks-claude`; never install automatically. For Codex, do not claim that Claude hook configuration applies. Mandatory project CI remains mandatory.

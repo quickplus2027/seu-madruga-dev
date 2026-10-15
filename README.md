@@ -14,6 +14,17 @@ npx skills add quickplus2027/seu-madruga-dev --skill seu-madruga-dev
 
 > O instalador `npx` pode obter e executar código externo. Confira o repositório e o instalador antes de utilizá-lo. Também é possível instalar a pasta [`skills/seu-madruga-dev`](skills/seu-madruga-dev) manualmente conforme a documentação do seu agente.
 
+
+## Quality Gates (opt-in) | Verificações reais
+
+Além dos guias, a versão **v0.3.0** traz verificação offline de arquivos alterados, indícios básicos de acessibilidade HTML e convenção editorial, com hooks consultivos opcionais para Claude Code. **Não garante visual premiado, redução de tokens ou cumprimento automático**. Não instala bibliotecas nem substitui testes de navegador ou auditoria de segurança.
+
+```powershell
+python D:\DEV\SeuMadruga\tools\quality_gates.py check --project D:\DEV\MeuProjeto --changed --editorial
+```
+
+Para instalar os hooks locais opcionais, veja [Quality Gates](docs/QUALITY_GATES.md). Eles nunca substituem arquivos `.claude/settings.local.json` existentes. Para Codex, use as regras em AGENTS.md e gates externos até validar uma integração específica de hooks.
+
 ## O que é o SeuMadruga.dev?
 
 É um **conjunto de instruções para assistentes de programação**. Ele orienta o Claude Code e o Codex a selecionar a quantidade necessária de contexto, planejar tarefas complexas, sugerir modelos adequados e executar testes proporcionais às alterações.
@@ -81,7 +92,7 @@ Os comandos de sessão variam entre produtos e versões. Por exemplo, `/context`
 - **Sem coleta de dados própria:** os arquivos da Skill não implementam telemetria; as políticas do Claude Code, Codex, GitHub e instaladores usados são independentes.
 - **Testes existentes:** verificações estruturais offline e testes unitários simples. Isso **não** equivale a auditoria de segurança nem demonstra economia de tokens.
 - **Evidências futuras:** medições devem comparar a mesma tarefa com e sem Skill, incluindo consumo, custo, tempo e qualidade. Veja [`EVALUATION.md`](EVALUATION.md).
-- **Status:** **v0.1.8 experimental**, sem benchmarks públicos conclusivos de redução de tokens.
+- **Status:** **v0.3.0 experimental**, sem benchmarks públicos conclusivos de redução de tokens.
 
 ## In English
 
@@ -98,3 +109,7 @@ Os comandos de sessão variam entre produtos e versões. Por exemplo, `/context`
 <p align="center">
   <img src="branding/seu-madruga-dev-mark.png" alt="Mascote SeuMadruga.dev" width="220">
 </p>
+
+
+## Ativação consistente por projeto
+A instalação da Skill sozinha não torna as regras permanentes. Consulte [Ativação e diagnóstico](docs/ACTIVATION.md) para adicionar instruções preservando seus arquivos e auditar o resultado. O comando `doctor` não confirma que o modelo obedeceu às instruções.
